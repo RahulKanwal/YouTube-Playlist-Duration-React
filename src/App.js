@@ -10,7 +10,7 @@ function App() {
   // const result = useRef(null);
   const handleSubmit = e => {
     e.preventDefault();
-    axios.post('https://yt-playlist-duration-flask.herokuapp.com/', {"link": playlist})
+    axios.post('https://youtube-playlist-duration.onrender.com/api/duration', {"link": playlist})
     .then(response => {
       console.log(response)
       // alert(response.data)
