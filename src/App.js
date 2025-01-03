@@ -41,9 +41,11 @@ function App() {
       <h1>YouTube Playlist Duration</h1>
       <form onSubmit={handleSubmit}>
       <div class="form-group row">
+        <div class="col-md-12">
         <label for="playlist link">Enter Playlist Link</label>
-        <input type="text" class="form-control" value={playlist} onChange={e => setPlaylist(e.target.value)} placeholder="https://www.youtube.com/playlist?list=playlist_id" />
-        <input type="submit" className="btn btn-primary" name="Calculate" />
+          <input type="text" class="form-control" value={playlist} onChange={e => setPlaylist(e.target.value)} placeholder="https://www.youtube.com/playlist?list=playlist_id" />
+          <input type="submit" className="btn btn-primary" name="Calculate" />
+        </div>
       </div>
       </form>
       <div id="duration">
